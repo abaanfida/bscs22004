@@ -126,7 +126,7 @@ section {
 
 .skills-column {
     flex: 1;
-    max-width: 300px; /* Adjust max width as needed */
+    max-width: 300px; 
 }
 
 
@@ -295,6 +295,12 @@ ul li {
 }
 #social ul{
     list-style: none;
+}
+.social-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 
 
