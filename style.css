@@ -310,15 +310,57 @@ ul li {
 
 
 @media (max-width: 600px) {
+    nav {
+        flex-direction: column; 
+        justify-content: flex-start; 
+    }
+
+    nav a {
+        float: none;
+        width: 100%; 
+        padding: 12px 0; 
+    }
+
+    header img {
+        width: 100px; 
+        height: 100px; 
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+
     section {
         padding: 15px;
     }
-    
+
     h2 {
         font-size: 24px;
     }
-    
+
     ul {
         padding-left: 15px;
+    }
+    
+    .skills-container {
+        flex-direction: column; /* Stack skills columns vertically */
+    }
+
+    .skills-column {
+        max-width: none; /* Remove width restriction for better fit */
+    }
+}
+
+@media (max-width: 768px) {
+    .projects-container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ensure projects are responsive */
+    }
+    
+    .activity-item {
+        width: 100%; /* Full width for activity items on smaller screens */
     }
 }
